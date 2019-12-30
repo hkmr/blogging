@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+    <title>Blog Detail Page</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="navbar"></div>
+
+      <div class="main-container">
+        <div class="login-form-container">
+          <div class="login-title">Login or create account</div>
+          <form action="#" class="login-form">
+            <input
+              type="text"
+              class="login-username"
+              placeholder="Username or Email id"
+            />
+            <input
+              type="password"
+              class="login-password"
+              placeholder="Password"
+            />
+            <input
+              type="submit"
+              value="Login"
+              name="Login"
+              class="login-submit"
+            />
+          </form>
+          <div class="create-account"><a href="#">create account</a></div>
+        </div>
+      </div>
+
+      <div id="footer"></div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(function() {
+      $("#navbar").load("../components/navbar.html");
+      $("#footer").load("../components/footer.html");
+    });
+  </script>
+</html>

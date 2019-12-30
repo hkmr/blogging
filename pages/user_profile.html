@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>User Profile</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="navbar"></div>
+
+      <div class="main-container">
+        <div class="user-container">
+          <div class="user-profile">
+            <img src="../images/Hd-Wallpapers-49B.jpg" alt="" />
+            <div class="user-name">Harsh Kumar</div>
+            <div class="user-bio">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              mollitia repudiandae sint adipisci excepturi accusamus, reiciendis
+              aut nisi voluptate a aliquam minus officia maxime esse officiis
+              maiores voluptates at id.
+            </div>
+          </div>
+          <hr />
+          <div class="user-blogs"></div>
+        </div>
+      </div>
+
+      <div id="footer"></div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(function() {
+      $("#navbar").load("../components/navbar.html");
+      $("#footer").load("../components/footer.html");
+    });
+  </script>
+</html>

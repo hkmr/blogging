@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="navbar"></div>
+
+      <div class="main-container">
+        <div class="title">Create New Blog</div>
+        <div class="blog-create-container">
+          <form action="#" class="blog-form">
+            <input
+              type="text"
+              class="blog-create-title"
+              placeholder="Blog title here"
+            />
+            <input
+              type="text"
+              class="blog-create-category"
+              placeholder="categories"
+            />
+
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="blog-create-main-content"
+              placeholder="Start writing blog from here ..."
+            ></textarea>
+            <input type="submit" name="Post" class="blog-create-submit" />
+          </form>
+        </div>
+      </div>
+
+      <div id="footer"></div>
+    </div>
+  </body>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script>
+    $(function() {
+      $("#navbar").load("../components/navbar.html");
+      $("#footer").load("../components/footer.html");
+    });
+  </script>
+</html>
